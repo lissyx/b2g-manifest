@@ -13,7 +13,7 @@
           fetch="git://github.com/Andromadus/" />
   <remote name="cyanogenmod"
           fetch="git://github.com/CyanogenMod/" />
-  <default revision="refs/tags/android-4.0.4_r1.2"
+  <default revision="refs/tags/android-4.1.1_r6"
            remote="linaro"
            sync-j="4" />
 
@@ -85,14 +85,14 @@
   <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="linaro" revision="jb-release" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="linaro" revision="jb-release" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" remote="linaro" revision="jb-release" />
+  <project path="system/core" name="platform/system/core" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
@@ -111,6 +111,6 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
 
   <!-- Provides lib_driver_cmd_bcmdhd for wpa_supplicant_8 -->
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="ics" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="jellybean" />
 
 </manifest>
