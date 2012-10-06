@@ -106,7 +106,6 @@
   <project path="vendor/andromadus" name="android_vendor_andromadus" remote="andromadus" revision="jb" />
 
   <!-- HTC Vision depends on frameworks/native/{build,data}/ -->
-  <project path="frameworks/native/build" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
-  <project path="frameworks/native/data" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
 
 </manifest>
