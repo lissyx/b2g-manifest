@@ -11,6 +11,8 @@
 	  fetch="git://github.com/mozilla/" />
   <remote name="andromadus"
           fetch="git://github.com/Andromadus/" />
+  <remote name="cyanogenmod"
+          fetch="git://github.com/CyanogenMod/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="linaro"
            sync-j="4" />
@@ -107,5 +109,8 @@
 
   <!-- HTC Vision depends on frameworks/native/{build,data}/ -->
   <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
+
+  <!-- Provides lib_driver_cmd_bcmdhd for wpa_supplicant_8 -->
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="jb" />
 
 </manifest>
