@@ -111,6 +111,6 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
 
   <!-- Provides lib_driver_cmd_bcmdhd for wpa_supplicant_8 -->
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="jellybean" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="ics" />
 
 </manifest>
