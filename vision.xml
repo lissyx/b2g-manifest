@@ -129,6 +129,12 @@
   <project path="device/htc/vision" name="android_device_htc_vision" remote="andromadus" revision="jb" />
   <project path="vendor/htc/vision" name="proprietary_htc_vision" remote="andromadus" revision="jb" />
 
+  <project path="hardware/qcom/audio" name="Andromadus/android_hardware_qcom_audio" revision="jellybean" />
+  <project path="hardware/qcom/camera" name="Andromadus/android_hardware_qcom_camera" revision="jellybean" />
+  <project path="hardware/qcom/display" name="Andromadus/android_hardware_qcom_display" revision="jellybean" />
+  <project path="hardware/qcom/librpc" name="Andromadus/android_hardware_qcom_librpc" revision="jellybean" />
+  <project path="hardware/qcom/media" name="Andromadus/android_hardware_qcom_media" revision="jellybean" />
+
   <!-- Andromadus specific -->
   <project path="vendor/andromadus" name="android_vendor_andromadus" remote="andromadus" revision="jb" />
 
