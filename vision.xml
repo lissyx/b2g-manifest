@@ -86,6 +86,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/native" name="platform/frameworks/native" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
@@ -137,9 +138,6 @@
 
   <!-- Andromadus specific -->
   <project path="vendor/andromadus" name="android_vendor_andromadus" remote="andromadus" revision="jb" />
-
-  <!-- HTC Vision depends on frameworks/native/{build,data}/ -->
-  <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
 
   <!-- Provides lib_driver_cmd_bcmdhd for wpa_supplicant_8 -->
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cyanogenmod" revision="jellybean" />
