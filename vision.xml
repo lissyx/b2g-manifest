@@ -102,4 +102,7 @@
   <project path="device/htc/vision" name="android_device_htc_vision" remote="andromadus" revision="jb" />
   <project path="vendor/htc/vision" name="proprietary_htc_vision" remote="andromadus" revision="jb" />
 
+  <!-- HTC Vision depends on frameworks/native/build/phone-hdpi-512-dalvik-heap.mk -->
+  <project path="frameworks/native" name="android_frameworks_native" remote="andromadus" revision="jellybean" />
+
 </manifest>
