@@ -97,6 +97,7 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- HTC Vision things -->
+  <project path="device/htc/common" name="android_device_htc_common" remote="andromadus" revision="jb" />
   <project path="device/htc/vision" name="android_device_htc_vision" remote="andromadus" revision="jb" />
   <project path="vendor/htc/vision" name="proprietary_htc_vision" remote="andromadus" revision="jb" />
 
