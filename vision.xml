@@ -140,6 +140,8 @@
   <project path="hardware/qcom/librpc" name="android_hardware_qcom_librpc" remote="andromadus" revision="jellybean" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="andromadus" revision="jellybean" />
 
+  <project path="kernel/htc/msm7x30-3.0" name="htc7x30-3.0" remote="andromadus" revision="andromadus" />
+
   <!-- Andromadus specific -->
   <project path="vendor/andromadus" name="android_vendor_andromadus" remote="andromadus" revision="jb" />
 
