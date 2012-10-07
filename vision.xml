@@ -125,6 +125,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
+  <project path="system/security" name="platform/system/security" />
 
   <!-- HTC Vision things -->
   <project path="device/htc/common" name="android_device_htc_common" remote="andromadus" revision="jb" />
