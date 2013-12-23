@@ -6,11 +6,16 @@
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
   <remote  name="linaro"
-           fetch="git://android.git.linaro.org/" />
+           fetch="http://android.git.linaro.org/git-ro/" />
+  <remote name="caf"
+          fetch="git://codeaurora.org/" />
   <remote name="mozilla"
 	  fetch="git://github.com/mozilla/" />
+  <remote name="mozillaorg"
+      fetch="https://git.mozilla.org/releases" />
+  <remote name="apitrace" fetch="git://github.com/apitrace/" />
   <default revision="refs/tags/android-4.0.4_r2.1"
-           remote="linaro"
+           remote="caf"
            sync-j="4" />
 
   <!-- Gonk specific things and forks -->
@@ -18,19 +23,20 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
-  <project path="gaia" name="gaia" remote="b2g" revision="master" />
-  <project path="gecko" name="releases-mozilla-central" remote="mozilla" revision="master" />
+  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
+  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
+  <project path="external/apitrace" name="apitrace" remote="apitrace" revision="master" />
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform/bionic" />
+  <project path="bionic" name="platform/bionic" revision="aosp-new/ics-plus-aosp" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="device/common" name="device/common" />
   <project path="device/sample" name="device/sample" />
-  <project path="external/apache-http" name="platform/external/apache-http" />
+  <project path="external/apriori" name="platform_external_apriori" remote="b2g" revision="master" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
@@ -40,14 +46,17 @@
   <project path="external/dbus" name="platform/external/dbus" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" />
+  <project path="external/elfcopy" name="platform_external_elfcopy" remote="b2g" revision="master" />
+  <project path="external/elfutils" name="platform_external_elfutils" remote="b2g" revision="master" />
   <project path="external/expat" name="platform/external/expat" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform/external/flac" />
   <project path="external/freetype" name="platform/external/freetype" />
   <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/gtest" name="platform/external/gtest" remote="linaro" revision="master" />
+  <project path="external/gtest" name="platform/external/gtest" revision="8c212ebe53bb2baab3575f03069016f1fb11e449" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
-  <project path="external/icu4c" name="platform/external/icu4c" />
+  <!-- icu4c is missing the default tag in caf, that's the *only* reason for the hardcode -->
+  <project path="external/icu4c" name="platform/external/icu4c" revision="0fa67b93b831c6636ca18b152a1b1b14cc99b034" />
   <project path="external/iptables" name="platform/external/iptables" />
   <project path="external/jhead" name="platform/external/jhead" />
   <project path="external/jpeg" name="platform/external/jpeg" />
@@ -55,7 +64,6 @@
   <project path="external/liblzf" name="platform/external/liblzf" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
   <project path="external/libnl-headers" name="platform/external/libnl-headers" />
-  <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libvpx" name="platform/external/libvpx" />
   <project path="external/mksh" name="platform/external/mksh" />
@@ -70,6 +78,7 @@
   <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/strace" name="platform/external/strace" />
+  <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
   <project path="external/tinyalsa" name="platform/external/tinyalsa" />
   <project path="external/tremolo" name="platform/external/tremolo" />
@@ -101,5 +110,6 @@
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" revision="60dfeb6e4448bfed707946ebca6612980f525e69" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" revision="3ece7d9e08052989401e008bc397dbcd2557cfd0" />
   <project path="external/negatus" name="Negatus" remote="mozilla" revision="master" />
+  <project path="external/orangutan" name="orangutan" remote="b2g" revision="master" />
 
 </manifest>
