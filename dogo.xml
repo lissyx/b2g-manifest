@@ -1,0 +1,48 @@
+<?xml version="1.0" ?><manifest>
+
+  <include name="base-caf-jb.xml"/>
+  <remote fetch="git://github.com/CyanogenMod/" name="cm"/>
+  <remote fetch="git://github.com/recaf/" name="recaf"/>
+  <remote fetch="git://github.com/sonyxperiadev/" name="sony"/>
+
+  <default remote="caf" revision="jb_3.2" sync-j="4"/>
+
+  <!-- Dogo specific things -->
+  <project name="fxos_device_sony_dogo" path="device/sony/dogo" remote="recaf" revision="master"/>
+  <project name="fxos_device_sony_common" path="device/sony/common" remote="recaf" revision="master"/>
+  <project name="device/qcom/common" path="device/qcom/common" revision="b2g_jb_3.2"/>
+  <project name="kernel-copyleft" path="kernel" remote="sony" revision="10.4.B.0.xxx"/>
+  <project name="fxos_vendor_sony" path="vendor/sony" remote="recaf" revision="master"/>
+
+  <remove-project name="platform_build"/>
+  <project name="platform_build" path="build" remote="recaf" revision="b2g-4.3_r2.1">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+
+  <!-- Android specific things -->
+  <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery"/>
+  <project name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid" revision="b2g_jb_3.2"/>
+  <project name="platform/external/bluetooth/bluez" path="external/bluetooth/bluez" revision="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/bluetooth/glib" path="external/bluetooth/glib" revision="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/dbus" path="external/dbus" revision="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
+  <project name="platform/frameworks/av" path="frameworks/av" revision="b2g_jb_3.2"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="b2g_jb_3.2"/>
+  <project name="platform/frameworks/native" path="frameworks/native" revision="b2g_jb_3.2"/>
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="b2g_jb_3.2"/>
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="cm" revision="cm-10.2"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="jb_2.6.1_rb1"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="jb_2.6.1_rb1"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="jb_2.6.1_rb1"/>
+  <project name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960" revision="jb_2.6.1_rb1"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="jb_3.2.5_rb1.7"/>
+  <project name="hardware_ril" path="hardware/ril" remote="recaf" revision="recaf-4.3"/>
+  <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
+  <project name="platform/system/bluetooth" path="system/bluetooth" revision="b2g_jb_3.2"/>
+  <project name="platform/system/core" path="system/core" revision="b2g_jb_3.2"/>
+  <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
+  <project name="platform/system/qcom" path="system/qcom" revision="jb_3.2.5_rb1.7"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="jb_2.6.1_rb1"/>
+
+</manifest>
