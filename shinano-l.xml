@@ -5,6 +5,8 @@
 
   <default remote="caf" revision="refs/tags/android-5.1.1_r3" sync-j="4"/>
 
+  <remote fetch="git://github.com/lissyx/" name="lissyx"/>
+
   <!-- Platform common things -->
   <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
   <project name="platform/external/libxml2" path="external/libxml2"/>
@@ -42,5 +44,8 @@
 
   <!-- Scorpion -->
   <project name="device-sony-scorpion" path="device/sony/scorpion" groups="device" remote="b2g" revision="sony-aosp-l"/>
+
+  <!-- Amami -->
+  <project name="device-sony-amami" path="device/sony/amami" groups="device" remote="lissyx" revision="sony-z1c"/>
 
 </manifest>
